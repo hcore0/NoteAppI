@@ -1,0 +1,24 @@
+<ion-view cache-view="false">
+    <ion-content>
+        <div class="app-logo">
+            <h1>NOTE</h1>
+        </div>
+        <form ng-submit="login()" name="loginForm" novalidate>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="用户名" ng-model="formData.account" required>
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="密码" ng-model="formData.password" required>
+                </label>
+
+                <button class="button button-full button-positive" type="submit" ng-disabled="loginForm.$invalid">
+                    登录
+                </button>
+                <a class="button button-small button-full button-clear button-stable" ng-click="configHost()">
+                  配置服务器地址
+                </a>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

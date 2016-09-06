@@ -1,0 +1,24 @@
+{
+  "boss": true,               //缺少分号
+  "curly": true,              //使用{}标示新的块
+  "eqnull": true,             //使用==null
+  "eqeqeq": true,             //使用===
+  "undef": true,              //所有非全局 变量需要声明
+  "browser": true,            //浏览器环境
+  "node": true,               //node环境
+  "latedef": true,            //先声明后使用
+  "newcap": true,             //构造器函数首字母大写
+  "noarg": true,              //禁止使用arguments.caller arguments.callee
+  "sub": true,                //忽略在应该使用.的时候使用[]
+  "unused": true,             //声明未使用的变量
+  "immed": true,              //立即执行函数包在()中
+  "indent": true,             //代码缩进
+  "freeze": true,             //禁止重写原生对象原型
+  "bitwise": true,            //禁止位运算
+  "es3": true,                //兼容ie6
+  "debug": true,              //忽略debugger
+  "evil": true,               //eval
+  "devel": true,              //调试环境
+  "globals": {
+  }
+}

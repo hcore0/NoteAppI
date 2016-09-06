@@ -1,0 +1,19 @@
+<ion-view>
+    <ion-nav-title>
+      个人
+    </ion-nav-title>
+    
+    <ion-content>
+        <div class="list">
+            <a class="item item-avatar" ui-sref="app.personal_user">
+                <img ng-src="{{user.thumbnail}}">
+                <p>{{user.nickname}}</p>
+            </a>
+            <div class="button-bar padding">
+                <button class="button button-small button-assertive" ng-click="logout()">
+                    退出
+                </button>   
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

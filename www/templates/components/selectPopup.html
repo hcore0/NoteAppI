@@ -1,0 +1,19 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-stable">
+        <h1 class="title">{{title}}</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <ion-checkbox ng-repeat="op in options" ng-model="op.checked"  ng-checked="op.checked">
+                <h2>{{op.value}}</h2>
+            </ion-checkbox>
+        </div>
+    </ion-content>
+
+    <ion-footer-bar>
+        <div class="button-bar">
+            <a class="button button-assertive button-outline icon ion-checkmark" ng-click="submitModal()"></a>
+            <a class="button button-dark button-outline icon ion-close" ng-click="cancelModal()"></a>
+        </div>
+    </ion-footer-bar>
+</ion-modal-view>

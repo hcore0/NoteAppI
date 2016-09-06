@@ -1,0 +1,142 @@
+/* Empty. Add your own CSS if you like */
+
+/*登陆页logo*/
+.app-logo {
+    height: 150px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+/*详情查看*/
+.note-createon {
+    float: right;
+    font-size: .8rem;
+    color: #ccc;
+}
+.note-author {
+    float: left;
+    font-size: .8rem;
+    color: #ccc;
+}
+.note-content {
+    text-indent: 2em;
+    margin-top: 1em;
+}
+.note-like {
+    line-height: 42px;
+}
+
+/*校验失败*/
+.app-error {
+    font-size: .8rem;
+    color: #ef473a;
+}
+
+/*清除浮动*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: '';
+}
+.clearfix:after {
+  clear: both;
+}
+
+/*照片上传预览*/
+.thumb-item {
+    width: 25%;
+    height: 90px;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    padding: 5px 3px;
+}
+.thumb-item > img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #eee;
+}
+
+/*照片查看*/
+.photo-modal {
+    background: #000;
+}
+.photo-content, .photo-content>.scroll,  .photo-content>.scroll>.slider{
+    height: 100%;
+}
+.photo-content .photo-wrapper {
+    height: 100%;
+    position: relative;
+}
+
+.photo-content .photo-wrapper > .lazy-img,
+.photo-content .photo-wrapper > img  {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*视频附件*/
+.video-area {
+    height: 120px;
+    padding: 10px;
+}
+.video-area > video {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #eee;
+    border-radius: 10px;
+}
+
+/*音频附件*/
+.audio-area {
+    height: 50px;
+    padding: 10px;
+}
+.audio-area > audio {
+    width: 100%;
+    background: #eee;
+    border-radius: 10px;
+}
+.audio-del-btn {
+    padding-top: 9px;
+    text-align: center;
+}
+
+/*弹出多选模态框*/
+.select-popup {
+    overflow: auto;
+    height: 50px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #666;
+    padding: 5px 10px;
+}
+
+/*ionic confirm*/
+.app-confirm > .popup {
+    border-radius: 5px;
+}
+.app-confirm .popup-buttons {
+    min-height: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.app-confirm .popup-body {
+    text-align: center;
+}
+.app-confirm .button {
+    min-height: 30px;
+    height: 30px;
+}
+
+.user-photo {
+    height: 200px;
+}

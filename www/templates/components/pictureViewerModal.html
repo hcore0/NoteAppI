@@ -1,0 +1,11 @@
+<ion-modal-view class="photo-modal">
+    <ion-content class="photo-content" scroll="false">
+        <ion-slides options="{loop: false,effect: 'slide', speed: 500}" slider="_pictureViewerData.slider">
+            <ion-slide-page ng-repeat="p in _pictureViewerModalPhotos">
+                <div class="photo-wrapper" ng-click="_closePictureViewerModal()">
+                    <img ng-src="{{p.url}}" alt="{{p.url}}"> 
+                </div>
+            </ion-slide-page>
+        </ion-slides>
+    </ion-content>
+</ion-modal-view>

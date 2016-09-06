@@ -1,0 +1,23 @@
+<ion-view cache-view="false">
+    <ion-nav-title>
+      {{note.title}}
+    </ion-nav-title>
+    
+    <ion-content>
+        <div class="card">
+            <div class="item item-text-wrap">
+                <div class="clearfix">
+                    <span class="note-author">{{note.author}}</span>
+                    <span class="note-createon">{{note.createOn | date: 'yy年MM月dd日'}}</span>
+                </div>
+                <div class="note-content"><p>{{note.content}}</p></div>
+
+                <div class="text-center">
+                    <a class="button button-clear">
+                        <span>{{note.like}}</span> <i class="icon ion-thumbsup"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,33 @@
+<ion-view cache-view="false">
+    <ion-nav-title>
+      我的信息
+    </ion-nav-title>
+    
+    <ion-content padding="true"> 
+      <form ng-submit="save()" name="editForm" novalidate autocomplete="off">
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">昵称</span>
+                <input type="text" ng-model="user.nickname" placeholder="请输入昵称" required name="nickname">
+                <div class="app-error" ng-messages="editForm.nickname.$dirty && editForm.nickname.$error" ng-messages-multiple>
+                    <div ng-message="required">请输入昵称</div>
+                </div>
+            </label>
+            <div class="item text-center">
+                <div>
+                    <img ng-src="{{user.thumbnail}}" class="user-photo">
+                </div>
+                <div>
+                    <a class="button button-small button-clear" ng-click="showSheet()">
+                       <i class="icon ion-plus-round"></i> 更换头像
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-bar">
+          <button class="button button-balanced" ng-disabled="editForm.$invalid">提交</button>
+        </div>
+      <form>
+    </ion-content>
+</ion-view>
