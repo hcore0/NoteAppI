@@ -14,7 +14,7 @@
       </ion-refresher>
 
       <ion-list>
-        <ion-item class="item-remove-animate item-icon-right" collection-repeat="note in notes" type="item-text-wrap" ui-sref="app.note_view({id: note._id})">
+        <ion-item class="item-remove-animate item-icon-right" ng-repeat="note in notes" type="item-text-wrap" ui-sref="app.note_view({id: note._id})">
           <h2>{{note.title}}</h2>
           <p>{{note.createOn | date : 'yyyy年M月d日 H:mm:ss'}}</p>
           <i class="icon ion-chevron-right icon-accessory"></i>
